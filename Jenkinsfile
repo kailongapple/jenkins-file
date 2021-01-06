@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('clone') {
       steps {
-        git(changelog: true, poll: true, url: 'https://github.com/kailongapple/jenkins-file', branch: '"${release}-${UUID.randomUUID().toString()}"')
+        git(changelog: true, poll: true, url: 'https://github.com/kailongapple/jenkins-file', branch: 'master')
       }
     }
 
